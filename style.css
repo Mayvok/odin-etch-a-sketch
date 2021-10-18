@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #282a36;
+}
+
+/* MAIN CONTAINER */
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* HEADER CONTENT */
+.header-container {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 3.5rem;
+  color: #50fa7b;
+  font-family: "Roboto", sans-serif;
+}
+
+/* MAIN CONTENT */
+.main-container {
+  width: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 30px;
+}
+.controls-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8be9fd;
+}
+.sketch-container {
+  margin-bottom: 20px;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #f8f8f2;
+  color: #282a36;
+  width: 80%;
+  height: 3em;
+  border: 1px solid #44475a;
+  border-radius: 5px;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button.toggle {
+  background-color: #bd93f9;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+  color: #f8f8f2;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  .sketch-container {
+    width: 400px;
+    height: 400px;
+  }
+  .button-container {
+    width: 500px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-container {
+    width: 650px;
+  }
+  .main-container {
+    width: 650px;
+  }
+  .sketch-container {
+    width: 300px;
+    height: 300px;
+  }
+  .button-container {
+    width: 500px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}

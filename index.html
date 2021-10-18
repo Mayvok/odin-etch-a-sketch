@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <header id="header-container" class="header-container">
+        <div id="header-title" class="header-title">
+          <h1>Etch-a-Sketch</h1>
+        </div>
+      </header>
+
+      <main id="main-container" class="main-container">
+        <div id="controls-container" class="controls-container">
+          <div class="input-container">
+            <span id="grid-size-value"></span>
+            <input
+              autocomplete="off"
+              type="range"
+              min="16"
+              max="64"
+              value="16"
+              id="grid-size"
+              step="16"
+            />
+          </div>
+          <div class="button-container">
+            <button id="darkBtn">Dark</button>
+            <button id="rainbowBtn">Rainbow</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+          </div>
+        </div>
+        <div id="sketch-container" class="sketch-container"></div>
+      </main>
+    </div>
+  </body>
+</html>
