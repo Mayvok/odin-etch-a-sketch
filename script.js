@@ -86,7 +86,7 @@ function changeColor(e) {
   } else if (currentMode == "dark") {
     e.target.style.backgroundColor = "#44475a";
   } else if (currentMode == "eraser") {
-    e.target.style.backgroundColor = "#fefefe";
+    e.target.style.backgroundColor = "#f8f8f2";
   }
 }
 
